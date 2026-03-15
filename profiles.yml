@@ -1,0 +1,13 @@
+orchestration_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: WUJPUYF-TO96060
+      user: "{{ env_var('DBT_SNOWFLAKE_USER') }}"
+      password: "{{ env_var('DBT_SNOWFLAKE_PASSWORD') }}"
+      database: ORCHESTRATION_DB
+      schema: dbt_analytics
+      warehouse: COMPUTE_WH
+      threads: 4
+      client_session_keep_alive: False
