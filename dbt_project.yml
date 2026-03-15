@@ -15,4 +15,5 @@ clean-targets:
 
 models:
   orchestration_project:
-    materialized: table
+    example_model:
+      materialized: table
