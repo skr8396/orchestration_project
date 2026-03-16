@@ -3,9 +3,4 @@
 ) }}
 
 -- This query will FAIL because 'invalid_column' doesn't exist
-SELECT 
-    CURRENT_TIMESTAMP() as created_at,
-    'Error Test Model' as model_name,
-    invalid_column as test_error,
-    1 as test_value
-FROM SNOWFLAKE_SYSTEM.INFORMATION_SCHEMA.CATALOGS
+select cs_customer_id,* from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.CUSTOMER  where c_customer_sk = '28437730'
