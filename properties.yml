@@ -1,0 +1,15 @@
+version: 2
+
+seeds:
+  - name: employee
+    config:
+      enabled: true
+      quote_columns: true
+      database: ORCHESTRATION_DB
+      schema: dbt_sk
+      column_types:
+        id: VARCHAR(16777216)
+        name: VARCHAR(16777216)
+        email: VARCHAR(16777216)
+        department: VARCHAR(16777216)
+        salary: VARCHAR(16777216)
